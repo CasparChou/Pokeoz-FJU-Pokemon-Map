@@ -1,0 +1,2 @@
+#!/bin/sh
+python main2.py  -a 'ptc' -u "$1" -p 'PASSWORD_HAS_BEEN_REMOVED' -l '25.0358566252, 121.43378821'

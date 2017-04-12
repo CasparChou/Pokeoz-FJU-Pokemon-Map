@@ -1,0 +1,17 @@
+#!/bin/sh
+start=$SECONDS
+while true
+do
+
+    echo "Starting Service"        
+    ./runwith $1
+    echo "____________________________"
+
+    if [ ! -f ./stop ]; then
+        echo "Service out.."
+        echo "Timer:" + $((SECONDS - start))
+    else
+        echo "Stop file effected !"
+        break
+    fi
+done
